@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 30px;
 }
 
@@ -11,10 +11,11 @@
   font-weight: 600;
 }
 
-.header .header__icon {
+.header .header__icon i {
   font-size: 25px;
   margin-left: 20px;
   cursor: pointer;
+  opacity: 1;
 }
 
 .header .header__header-column {
@@ -22,7 +23,8 @@
   align-items: center;
 }
 
-.header .header__back-btn {
+.header .header__back-btn i {
   font-size: 25px;
   margin-right: 20px;
+  opacity: 1;
 }

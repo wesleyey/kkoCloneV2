@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Chat</title>
   </head>
-  <body>
+  <body class="chat-body">
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock">13:53</span>
@@ -43,21 +43,35 @@
         </span>
       </div>
     </header>
-    <main class="chat">
+    <main class="chat-chat">
       <ul class="chat__messages">
         <span class="chat__timestamp">Friday, January 11, 2019</span>
         <li class="incoming-message message">
           <img src="images/user.png" alt="" class="g-avatar message-avatar" />
           <div class="message__content">
-            <span class="message__author">Best Friend</span>
-            <div class="message__bubble">What the heck!</div>
+            <span class="message__author">설</span>
+            <div class="message__bubble">여보??!</div>
           </div>
-          <span class="message__timestamp">15:19</span>
+          <span class="message__timestamp">18:39</span>
+        </li>
+        <li class="sending-message message">
+          <span class="message__timestamp">18:45</span>
+          <div class="message__content">
+            <div class="message__bubble">내려가는 중~</div>
+          </div>
         </li>
         <li class="incoming-message message">
-          <span class="message__timestamp">15:22</span>
+          <img src="images/user.png" alt="" class="g-avatar message-avatar" />
           <div class="message__content">
-            <div class="message__bubble">What's wrong?!</div>
+            <span class="message__author">설</span>
+            <div class="message__bubble">빨리와!</div>
+          </div>
+          <span class="message__timestamp">18:55</span>
+        </li>
+        <li class="sending-message message">
+          <span class="message__timestamp">18:59</span>
+          <div class="message__content">
+            <div class="message__bubble">곧 도착해요~~</div>
           </div>
         </li>
       </ul>
