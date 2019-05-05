@@ -1,14 +1,23 @@
-.chat-chat {
-  background-image: url(../images/chatBG.png);
-  min-height: 100vh;
+.header-wrapper {
+  background-color: white;
+  padding-bottom: 1px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  box-shadow: 0 0 0 1px rgba(50, 50, 93, 0.05),
+    0 2px 5px 0 rgba(50, 50, 93, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.07);
+  z-index: 2;
 }
 
 .chat-body {
+  background-image: url(../images/chatBG.png);
+  min-height: 200vh;
   padding: 0;
+  padding-top: 120px;
 }
 
 .chat-body .status-bar {
-  padding: 10px 10px 10px 20px;
+  padding: 10px 10px 0px 20px;
 }
 
 .chat-body .header {
@@ -61,6 +70,16 @@
   background-color: #ece6f5;
   margin-right: 20px;
   align-items: flex-start;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(1turn);
+  }
 }
 
 .chat-chat .chat__messages {
@@ -72,6 +91,8 @@
 }
 
 .chat__messages .chat__timestamp {
+  position: relative;
+  z-index: -1;
   background-color: #cee589;
   font-size: 14px;
   font-weight: 700;
@@ -130,4 +151,34 @@
   border-top-right-radius: 0;
   margin-left: 10px;
   background-image: linear-gradient(to left, #67b26f, #4ca2cd);
+}
+
+@keyframes anime_message_in {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes anime_message_send {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.incoming-message {
+  animation: anime_message_in 1s ease-out forwards;
+}
+
+.sending-message {
+  animation: anime_message_send 1s ease-out forwards;
 }
