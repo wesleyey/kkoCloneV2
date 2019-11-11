@@ -12,6 +12,7 @@
 .find .find__header .header-btn__title {
   display: block;
   margin-top: 10px;
+  text-align: center;
 }
 
 .find .find__header .header-btn__icon {
